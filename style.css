@@ -228,6 +228,11 @@ body {
     background-color: #fff2e5;
 }
 
+.reviews {
+    color:#088178 !important;
+    font-family: 'Playfair Display' !important; 
+    
+}
 
 #product1 {
     text-align: center;
