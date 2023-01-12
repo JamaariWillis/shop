@@ -284,6 +284,11 @@ body {
     transition: 0.2s;
 }
 
+.star2 {
+    color: rgb(240, 177, 18);
+    font-size: 12px;
+}
+
 #product1 .pro:hover .des h5 {
     color: #088178;
 }
