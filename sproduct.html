@@ -7,11 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yankee Home Goods</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div class="model-container" id="model-container">
+        <div class="model" id="model">
+            <button class="close-btn" id="close1"><i class="fa fa-times"></i></button>
+            <div class="model-content">
+                <div class="header">
+                    <h2 class="discount">Get 10% off!</h2>
+                    <p class="tagline">but you'll have to sign up today to get the deal</p>
+                    <p>Enter your email & recieve your special code!</p>
+                </div>
+                <form action="contact.php" method="post">
+                    <input type="text" required="required" placeholder="Enter Email Here..">
+                    <button class="subscribe">subscribe</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
     
 
     <section id="header">
@@ -86,8 +106,8 @@
 
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
-            <h4>Sign Up For 20% off!</h4>
-            <p>When you join our email list you get access to <span><u>exclusive new offers.</u></span> </p>
+            <h4>Sign Up For 10% off!</h4>
+            <p>When you join our email list you get access to <span><u>discount code</u></span> at checkout!</p>
         </div>
         <div class="form">
             <input type="text" placeholder="Your email address">
@@ -158,6 +178,9 @@
             MainImg.src = smallimg[3].src;
         }
     </script>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 
 
     <script src="script.js"></script>
