@@ -756,7 +756,7 @@ footer a:hover {
     flex-direction: row;
     align-items: center;
     position: relative;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 #blog .blog-img {
@@ -1198,7 +1198,7 @@ footer a:hover {
     .section-p1 {
         padding: 20px;
     }
- =
+ 
     h1 {
         font-size: 38px;
     }
