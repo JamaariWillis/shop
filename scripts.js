@@ -11,7 +11,9 @@ $(document).ready(function(){
 
     setTimeout(showModel,6000);
 
-    $('#close').click(function(){
+    $('#close1').click(function(){
         closeModel();
+        clearTimeout();
     })
+
 });
