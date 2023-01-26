@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     function showModel(){
         $('#model-container').show();
-        $('html body').css('overflow','hidden');
+        $('html body').css('overflow','visible');
     }
 
     function closeModel(){
