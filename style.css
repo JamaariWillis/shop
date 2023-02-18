@@ -16,11 +16,15 @@ html {
 }
 
 .desc {
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .pro-detail {
-    font-size: 18px;
+    font-size: 22px;
+}
+
+.pro-detail1 {
+    font-size: 23px;
 }
 
 .h1 {
