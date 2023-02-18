@@ -4,17 +4,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', 'Montserrat' , sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+.pro-1 {
+    font-size: 40px;
+}
+
+.desc {
+    font-size: 18px;
+}
+
+.pro-detail {
+    font-size: 18px;
+}
+
 .h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
+}
+
+.price-2 {
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 .h2 {
@@ -25,12 +42,16 @@ html {
 
 h4 {
     font-size: 20px;
-    color: #222;
+    color: #000;
 }
 
 h6 {
     font-weight: 700;
     font-size: 17px;
+}
+
+.price {
+    color: #000 !important;
 }
 
 .p {
