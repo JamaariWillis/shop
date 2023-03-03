@@ -11,8 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .pro-1 {
-    font-size: 40px;
+    font-size: 35px;
+    line-height:1px; 
 }
 
 .desc {
@@ -65,10 +67,25 @@ h6 {
     margin: 15px 0 20px 0;
 }
 
-button.normal {
-    font-size: 19px;
+.views {
+    font-size: 15px;
     font-weight: 700;
-    padding: 15px 22px;
+    width: 35vw;
+    height: 50px;
+    color: black !important;
+    background-color: white !important; 
+    border: 1px solid black !important;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+
+.normal {
+    font-size: 15px;
+    font-weight: 700;
+    width: 35vw;
+    height: 50px;
     color: #000;
     background-color: #fff;
     border-radius: 4px;
@@ -352,6 +369,44 @@ body {
 }
 
 
+.iron-background {
+    background-image: url(img/products/test1.jpg);
+    background-position: center ;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.iron-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000096;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.iron-box {
+    background-color: black;
+    color: white;
+    height: 50vh;
+    width: 50vw;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.iron-box h2{
+    margin-bottom: 20px;
+}
+
+
+
 
 
 .review .rev-p3 {
@@ -364,11 +419,14 @@ body {
 
 }
 
-
+.pro-desc {
+    margin-top: 15px;
+}
 
 .star2 {
     color: rgb(240, 177, 18);
     font-size: 12px;
+    margin-top: 30px;
 }
 
 #product1 .pro:hover .des h5 {
@@ -537,15 +595,18 @@ body {
     background-position: 20% 30%;
     background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 #newsletter h4 {
     font-size: 22px;
     font-weight: 700;
     color: #fff;
+    text-align: center;
+    margin-bottom: 22px;
 }
 
 #newsletter p {
@@ -574,11 +635,20 @@ body {
 #newsletter .form {
     display: flex;
     width: 40%;
+    margin-top: 22px;
+}
+
+#newsletter .email-holder {
+    border: 1px solid white;
+
 }
 
 #newsletter button {
-    background-color: black;
-    color: #fff;
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    width: 200px;
     white-space: nowrap;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -593,6 +663,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    color: white;
+    background-color: black;
     
 }
 
@@ -604,20 +676,17 @@ footer .follow {
     margin-top: 20px;
 }
 
-footer .follow i {
-    color: #465b52;
-    padding-right: 4px;
-    cursor: pointer;
-}
 
 footer h4 {
     font-size: 14px;
     padding-bottom: 20px;
+    color: white;
 }
 
 footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
+    color: white;
 }
 
 footer .col {
@@ -625,13 +694,14 @@ footer .col {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    color: white;
 }
 
 footer a {
     font-size: 13px;
     text-decoration: none;
     margin-bottom: 10px;
-    color: #222;
+    color: white;
 }
 
 footer .install .row img {
@@ -711,18 +781,27 @@ footer a:hover {
 }
 
 #prodetails .single-pro-image {
-    width: 40%;
+    margin-top: 30px;
+    width: 42%;
     margin-right: 50px;
 }
 
 .small-img-group {
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .small-img-col {
-    flex-basis: 24%;
+    flex-basis: 40%;
+    width: 50%;
     cursor: pointer;
+}
+
+.single-pro-details {
+    position: relative;
+    margin-left: 90px;
 }
 
 #prodetails .single-pro-details {
@@ -1008,124 +1087,18 @@ footer a:hover {
 
 /* Cart Page */
 
-#cart {
-    overflow-x: auto;
-}
-
-#cart table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    white-space: nowrap;
-}
-
-#cart table img {
-    width: 70px;
-}
-
-#cart table td:nth-child(1) {
-    width: 100px;
-    text-align: center;
-}
-
-#cart table td:nth-child(2) {
-    width: 150px;
-    text-align: center;
-}
-
-#cart table td:nth-child(3) {
-    width: 250px;
-    text-align: center;
-}
-
-#cart table td:nth-child(4),
-#cart table td:nth-child(5),
-#cart table td:nth-child(6) {
-    width: 150px;
-    text-align: center;
-}
-
-#cart table td:nth-child(5) input {
-    width: 70px;
-    padding: 10px 5px 10px 15px;
-}
-
-#cart table thead {
-    border: 1px solid #e2e9e1;
-    border-left: none;
-    border-right: none;
-}
-
-#cart table thead td {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 13px;
-    padding: 18px 0;
-}
-
-#cart table tbody tr td {
-    padding-top: 15px;
-}
-
-#cart table tbody td {
-    font-size: 13px;
-}
-
-#cart-add {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#cuopon {
-    width: 50%;
-    margin-bottom: 30px;
-}
-
-#cuopon h3,
-#subtotal h3 {
-    padding-bottom: 15px;
-}
-
-#cuopon input {
-    padding: 10px 20px;
-    outline: none;
-    width: 60%;
-    margin-right: 10px;
-    border: 1px solid #e2e9e1;
-}
-
-#cuopon button,
-#subtotal button {
-    background: black;
-    color: #fff;
-    padding: 12px 20px;
-}
-
-#subtotal {
-    width: 50%;
-    margin-bottom: 30px;
-    border: 1px solid #e2e9e1;
-    padding: 30px;
-}
-
-#subtotal table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-#subtotal table td {
-    width: 50%;
-    border: 1px solid #e2e9e1;
-    padding: 10px;
-    font-size: 13px;
-}
-
 
 /* Start Media Query */
 
-@media (max-width:799px) {
+@media (min-width:801px) {
+    .iron-box2 {
+        display: none;
+    }
+}
+
+
+
+@media (max-width:800px) {
     .section-p1 {
         padding: 40px;
     }
@@ -1185,6 +1158,53 @@ footer a:hover {
     #feature .fe-box {
         margin: 15px;
     }
+
+    .pro-1 {
+        font-size: 25px;
+    }
+
+    .iron-background {
+        background-image: url(img/products/test1.jpg);
+        background-position: center;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .iron-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #00000096;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .iron-box {
+        background-color: black;
+        color: white;
+        height: 50vh;
+        width: 50vw;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        line-height: 25px;
+    }
+   
+    
+    .iron-box h2{
+        margin-bottom: 10px;
+    }
+
+    .iron-box p {
+        font-size: 12.9px;
+    }
+
     #product1 .pro-container {
         justify-content: center;
     }
@@ -1218,9 +1238,77 @@ footer a:hover {
     #form-details form {
         width: 50%;
     }
+
+    .iron-box2 {
+        display: none;
+    }
 }
 
-@media (max-width:450px) {
+@media (max-width:625px) {
+    
+    .single-pro-details {
+        margin-left: 0px;
+    }
+
+    .pro-1 {
+        font-size: 25px;
+    }
+
+    .iron-background {
+        background-image: url(img/products/steaam.jpg);
+        background-position: center;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .iron-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #00000096;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .iron-box {
+        background-color: black;
+        color: white;
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        line-height: 10px;
+        display: none;
+    }
+
+    .iron-box2 {
+        background-color: black;
+        visibility: visible;
+        color: white;
+        height: 500px;
+        width: 100%;
+        text-align: center;
+        line-height: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .iron-box2 h2{
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .iron-box2 p {
+        font-size: 17px;
+        padding: 0px 15px;
+    }
+    
     .section-p1 {
         padding: 20px;
     }
@@ -1347,4 +1435,3 @@ footer a:hover {
         padding-top: 30px;
     }
 }
-
