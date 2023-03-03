@@ -598,7 +598,9 @@ body {
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: auto 200px;
     margin: auto;
+    
 }
 
 #newsletter h4 {
