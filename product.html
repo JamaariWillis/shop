@@ -75,17 +75,32 @@
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="img/products/iron 4.jpeg" width="100%" class="small-img" alt="">
+                    <img src="img/products/iron 4.jpeg" width="100%" id="img2" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="img/products/iron 7.jpeg" width="100%" class="small-img" alt="">
+                    <img src="img/products/iron 7.jpeg" width="100%" id="img3" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="img/products/iron 2.jpeg" width="100%" class="small-img" alt="">
+                    <img src="img/products/iron 2.jpeg" width="100%" id="img4" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="img/products/iron 8.jpg" width="100%" class="small-img" alt="">
+                    <img src="img/products/iron 8.jpg" width="100%" id="img5" class="small-img" alt="">
                 </div>
+
+
+                <script>
+                    function changeImage()
+                    {
+                        document.getElementById('MainImg').src='img/products/w iron2.webp';
+                        document.getElementById('img2').src='img/products/w iron1.webp';
+                        document.getElementById('img3').src='img/products/w iron3.webp';
+                        document.getElementById('img4').src='img/products/w iron4.webp';
+                        document.getElementById('img5').src='img/products/w iron2.webp';
+
+                    }
+
+                </script>
+
             </div>
         </div>
 
@@ -103,6 +118,7 @@
             </div>
             <h2 class="price-2">$29.99</h2>
         
+            <button class="color-button" onclick="changeImage()">Change Color: White</button>
             <a href="#details-about"><button class="views">View Details</button></a>
             <a href="https://buy.stripe.com/9AQ5l77hN8ox8zm6oo"><button class="normal">Buy it now</button></a>
 

@@ -12,6 +12,7 @@ html {
 }
 
 
+
 .pro-1 {
     font-size: 35px;
     line-height:1px; 
@@ -76,6 +77,20 @@ h6 {
     background-color: white !important; 
     border: 1px solid black !important;
     border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+
+.color-button {
+    font-size: 13px;
+    font-weight: 800;
+    width: 35vw;
+    height: 50px;
+    color: black !important;
+    background-color: white !important; 
+    border: none;
+    border-bottom: 1px solid #000 !important;
     cursor: pointer;
     transition: 0.2s;
     margin-bottom: 10px;
